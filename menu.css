@@ -1,0 +1,112 @@
+*{
+    font-family: 'Montserrat';
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: rgb(228, 42, 42);
+    margin:0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .links li{
+    list-style: none;
+}
+header .links li a{
+    display: inline-block;   
+    height: 50px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+header .links li a span ion-icon{
+    font-size: 26px;
+}
+header .links li a span{
+    margin-right: 10px;
+    font-weight: bold;
+    transition: 0.3s all ease;
+}
+header .links li a span:nth-child(2):hover{
+    letter-spacing: 3px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .menu_title{
+    margin-top: 40px;
+    padding: 5px;
+    border-bottom: 3px solid black;
+}
+main .cards{
+    width: 100%;
+    margin:40px auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+main .card{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    background-color: #ffa600;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    margin:30px 30px;
+}
+.card h2{
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card h3{
+    text-align: center;
+}
+.card .bottomCard{
+    color: black;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    top: 90px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+.card .bottomCard ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 10px;
+    padding:15px;
+}
+.card .bottomCard ul li{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.card .bottomCard ul li span{
+    font-weight: normal;
+    display: block;
+    margin:10px 0px;
+}
